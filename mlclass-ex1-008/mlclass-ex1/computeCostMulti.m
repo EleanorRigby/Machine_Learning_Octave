@@ -14,7 +14,13 @@ J = 0;
 %               You should set J to the cost.
 
 
+val = theta'*X';
+next = val'-y;
+next = next.^2;
+sumnext = sum(next);
+double_number = 2*m;
 
+J = sumnext/double_number;
 
 
 % =========================================================================
